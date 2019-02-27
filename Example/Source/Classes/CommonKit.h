@@ -11,6 +11,6 @@
 
 #import "LQCommonKitMannger.h"
 
-#define LQCommonKitLog(format) [[LQCommonKitMannger instance] logInfo:format]
+#define LQLog(format) [[LQCommonKitMannger instance] logInfo:format]
 
 #endif /* CommonKit_h */
