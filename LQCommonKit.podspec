@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LQCommonKit'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'Zhejiang Lu Qi Technology Co., Ltd. common SDK'
 
 # This description is used to generate tags and improve search results.
