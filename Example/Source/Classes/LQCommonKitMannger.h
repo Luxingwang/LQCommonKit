@@ -12,6 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LQCommonKitMannger : NSObject
 
++(LQCommonKitMannger*)instance;
+
+@property (nonatomic,assign) BOOL logEnabled;
+
+- (void)logInfo:(id)info;
+
 @end
 
 NS_ASSUME_NONNULL_END

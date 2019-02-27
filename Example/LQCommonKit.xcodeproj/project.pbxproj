@@ -114,10 +114,10 @@
 			isa = PBXGroup;
 			children = (
 				2A951968222622D600E67FAF /* CommonKit.h */,
-				2A951969222622D600E67FAF /* LQCommonKitMannger.m */,
 				2A95196A222622D600E67FAF /* LQBaseController.h */,
-				2A95196B222622D600E67FAF /* LQCommonKitMannger.h */,
 				2A95196C222622D600E67FAF /* LQBaseController.m */,
+				2A95196B222622D600E67FAF /* LQCommonKitMannger.h */,
+				2A951969222622D600E67FAF /* LQCommonKitMannger.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";

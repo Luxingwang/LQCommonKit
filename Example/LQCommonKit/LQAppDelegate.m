@@ -7,12 +7,14 @@
 //
 
 #import "LQAppDelegate.h"
+#import "LQBaseController.h"
 
 @implementation LQAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window.rootViewController = [[LQBaseController alloc] init];
     return YES;
 }
 

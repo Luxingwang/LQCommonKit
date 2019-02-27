@@ -10,4 +10,19 @@
 
 @implementation LQCommonKitMannger
 
++(LQCommonKitMannger*)instance{
+    static LQCommonKitMannger *mannger = nil;
+    static dispatch_once_t predicte;
+    dispatch_once(&predicte, ^{
+        mannger = [[LQCommonKitMannger alloc] init];
+        mannger.logEnabled = YES;
+    });
+    return mannger;
+}
+
+- (void)logInfo:(id)info{
+    if (self.logEnabled) {
+        NSLog(@"%@",info);
+    }
+}
 @end

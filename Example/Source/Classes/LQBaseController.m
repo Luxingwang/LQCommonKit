@@ -6,6 +6,7 @@
 //  Copyright © 2019 Luxingwang. All rights reserved.
 //
 
+#import "CommonKit.h"
 #import "LQBaseController.h"
 
 @interface LQBaseController ()
@@ -14,19 +15,15 @@
 
 @implementation LQBaseController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSString *info = [NSString stringWithFormat:@"msg: %@ willAppear",NSStringFromClass([self class ])];
+    LQCommonKitLog(info);
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)dealloc{
+    NSString *info = [NSString stringWithFormat:@"msg: %@ dealloc",NSStringFromClass([self class ])];
+    LQCommonKitLog(info);
 }
-*/
 
 @end

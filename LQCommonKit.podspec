@@ -30,7 +30,7 @@ Zhejiang Lu Qi Technology Co., Ltd. common SDK.
 
   s.ios.deployment_target = '8.0'
 
-s.source_files = 'Example/Source/Classes/**/*.{h,m}'
+s.source_files = 'Example/Source/**/*'
   
   # s.resource_bundles = {
   #   'LQCommonKit' => ['LQCommonKit/Assets/*.png']

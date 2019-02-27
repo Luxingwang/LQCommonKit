@@ -9,5 +9,8 @@
 #ifndef CommonKit_h
 #define CommonKit_h
 
+#import "LQCommonKitMannger.h"
+
+#define LQCommonKitLog(format) [[LQCommonKitMannger instance] logInfo:format]
 
 #endif /* CommonKit_h */
