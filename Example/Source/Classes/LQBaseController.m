@@ -18,12 +18,12 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     NSString *info = [NSString stringWithFormat:@"msg: %@ willAppear",NSStringFromClass([self class ])];
-    LQCommonKitLog(info);
+    LQLog(info);
 }
 
 - (void)dealloc{
     NSString *info = [NSString stringWithFormat:@"msg: %@ dealloc",NSStringFromClass([self class ])];
-    LQCommonKitLog(info);
+    LQLog(info);
 }
 
 @end
