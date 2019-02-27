@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A95196D222622D600E67FAF /* LQCommonKitMannger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A951969222622D600E67FAF /* LQCommonKitMannger.m */; };
+		2A95196E222622D600E67FAF /* LQBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A95196C222622D600E67FAF /* LQBaseController.m */; };
 		41439F23202823FEA4CD3DD4 /* Pods_LQCommonKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F692FA692B613533DD5073 /* Pods_LQCommonKit_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -39,7 +41,12 @@
 /* Begin PBXFileReference section */
 		00923A8FA99C30FAFA83F65F /* Pods-LQCommonKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQCommonKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-LQCommonKit_Tests/Pods-LQCommonKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		263F86BAE86928C57AD2CE8A /* Pods_LQCommonKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LQCommonKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		31164B3D01568B850A59F97A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2A951968222622D600E67FAF /* CommonKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonKit.h; sourceTree = "<group>"; };
+		2A951969222622D600E67FAF /* LQCommonKitMannger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCommonKitMannger.m; sourceTree = "<group>"; };
+		2A95196A222622D600E67FAF /* LQBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQBaseController.h; sourceTree = "<group>"; };
+		2A95196B222622D600E67FAF /* LQCommonKitMannger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCommonKitMannger.h; sourceTree = "<group>"; };
+		2A95196C222622D600E67FAF /* LQBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQBaseController.m; sourceTree = "<group>"; };
+		31164B3D01568B850A59F97A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5F755A9234BFC4FD145AA4D5 /* Pods-LQCommonKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQCommonKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LQCommonKit_Tests/Pods-LQCommonKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LQCommonKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LQCommonKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,9 +71,9 @@
 		7B360209C104C367993CD0F7 /* Pods-LQCommonKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQCommonKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-LQCommonKit_Example/Pods-LQCommonKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5F692FA692B613533DD5073 /* Pods_LQCommonKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LQCommonKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6B0ABEE6F8565EDC15A3612 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C6B0ABEE6F8565EDC15A3612 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DCA38A8DD2A2BB0F30CE2FDD /* Pods-LQCommonKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQCommonKit_Example.release.xcconfig"; path = "Target Support Files/Pods-LQCommonKit_Example/Pods-LQCommonKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E342176C729815E9F741C279 /* LQCommonKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LQCommonKit.podspec; path = ../LQCommonKit.podspec; sourceTree = "<group>"; };
+		E342176C729815E9F741C279 /* LQCommonKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LQCommonKit.podspec; path = ../LQCommonKit.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +102,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A951966222622D600E67FAF /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2A951967222622D600E67FAF /* Classes */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2A951967222622D600E67FAF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2A951968222622D600E67FAF /* CommonKit.h */,
+				2A951969222622D600E67FAF /* LQCommonKitMannger.m */,
+				2A95196A222622D600E67FAF /* LQBaseController.h */,
+				2A95196B222622D600E67FAF /* LQCommonKitMannger.h */,
+				2A95196C222622D600E67FAF /* LQBaseController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		4EA9C068C76AA0EFCD290D27 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,13 +130,13 @@
 				5F755A9234BFC4FD145AA4D5 /* Pods-LQCommonKit_Tests.debug.xcconfig */,
 				00923A8FA99C30FAFA83F65F /* Pods-LQCommonKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				2A951966222622D600E67FAF /* Source */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for LQCommonKit */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -369,7 +396,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* LQAppDelegate.m in Sources */,
+				2A95196D222622D600E67FAF /* LQCommonKitMannger.m in Sources */,
 				6003F5A7195388D20070C39A /* LQViewController.m in Sources */,
+				2A95196E222622D600E67FAF /* LQBaseController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
