@@ -6,7 +6,7 @@
 //  Copyright © 2019 Luxingwang. All rights reserved.
 //
 
-#import "CommonKit.h"
+#import "LQLogKit.h"
 #import "LQBaseController.h"
 
 @interface LQBaseController ()

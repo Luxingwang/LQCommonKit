@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'LQCommonKit'
-  s.version          = '1.0.1'
-  s.summary          = 'Zhejiang Lu Qi Technology Co., Ltd. common SDK'
+s.name             = 'LQCommonKit'
+s.version          = '1.0.1'
+s.summary          = 'Zhejiang Lu Qi Technology Co., Ltd. common SDK'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,26 +17,53 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
+s.description      = <<-DESC
 Zhejiang Lu Qi Technology Co., Ltd. common SDK.
-                       DESC
+DESC
 
-  s.homepage         = 'https://github.com/Luxingwang/LQCommonKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Luxingwang' => '1357494854@qq.com' }
-  s.source           = { :git => 'https://github.com/Luxingwang/LQCommonKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.homepage         = 'https://github.com/Luxingwang/LQCommonKit'
+# s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+s.license          = { :type => 'MIT', :file => 'LICENSE' }
+s.author           = { 'Luxingwang' => '1357494854@qq.com' }
+s.source           = { :git => 'https://github.com/Luxingwang/LQCommonKit.git', :tag => s.version.to_s }
+# s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '8.0'
 
-s.source_files = 'Example/Source/**/*'
-  
-  # s.resource_bundles = {
-  #   'LQCommonKit' => ['LQCommonKit/Assets/*.png']
-  # }
+s.public_header_files = 'LQCommonKit/LQCommonKit.h'
+#
+s.source_files = 'LQCommonKit/LQCommonKit.h' 
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+#mark LogKit
+s.subspec 'LogKit' do |ss|
+#
+ss.ios.deployment_target = '8.0'
+#
+ss.public_header_files = 'LQCommonKit/LogKit/LQLogKit.h', 'LQCommonKit/LogKit/LQLogKitMannger.h'
+#
+ss.source_files = 'LQCommonKit/LogKit/LQLogKit.h','LQCommonKit/LogKit/LQLogKitMannger.{h,m}'
+#
+end
+
+#mark UIKit
+
+s.subspec 'UIKit' do |ss|
+#
+ss.ios.deployment_target = '8.0'
+#
+ss.public_header_files = 'LQCommonKit/UIKit/LQUIKit.h', 'LQCommonKit/UIKit/LQBaseController.h'
+#
+ss.source_files = 'LQCommonKit/UIKit/LQUIKit.h', 'LQCommonKit/UIKit/LQBaseController.{h,m}'
+#
+ss.dependency 'LQCommonKit/LogKit'
+#
+end
+
+# s.resource_bundles = {
+#   'LQCommonKit' => ['LQCommonKit/Assets/*.png']
+# }
+
+
+# s.frameworks = 'UIKit', 'MapKit'
+# s.dependency 'AFNetworking', '~> 2.3'
 end

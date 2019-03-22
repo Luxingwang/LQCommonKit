@@ -4,7 +4,8 @@ platform :ios, '8.0'
 
 target 'LQCommonKit_Example' do
   pod 'AFNetworking'
-
+  #pod 'SocketRocket'
+  pod 'LQCommonKit', :path => 'Lib/LQCommonKit'
   target 'LQCommonKit_Tests' do
     inherit! :search_paths
 

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A95196D222622D600E67FAF /* LQCommonKitMannger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A951969222622D600E67FAF /* LQCommonKitMannger.m */; };
-		2A95196E222622D600E67FAF /* LQBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A95196C222622D600E67FAF /* LQBaseController.m */; };
+		2AD6A4472244BAD5000FDA70 /* LQBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD6A4432244BAD5000FDA70 /* LQBaseController.m */; };
+		2AD6A4482244BAD5000FDA70 /* LQLogKitMannger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD6A4452244BAD5000FDA70 /* LQLogKitMannger.m */; };
 		41439F23202823FEA4CD3DD4 /* Pods_LQCommonKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F692FA692B613533DD5073 /* Pods_LQCommonKit_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -41,11 +41,13 @@
 /* Begin PBXFileReference section */
 		00923A8FA99C30FAFA83F65F /* Pods-LQCommonKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQCommonKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-LQCommonKit_Tests/Pods-LQCommonKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		263F86BAE86928C57AD2CE8A /* Pods_LQCommonKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LQCommonKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A951968222622D600E67FAF /* CommonKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonKit.h; sourceTree = "<group>"; };
-		2A951969222622D600E67FAF /* LQCommonKitMannger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCommonKitMannger.m; sourceTree = "<group>"; };
-		2A95196A222622D600E67FAF /* LQBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQBaseController.h; sourceTree = "<group>"; };
-		2A95196B222622D600E67FAF /* LQCommonKitMannger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCommonKitMannger.h; sourceTree = "<group>"; };
-		2A95196C222622D600E67FAF /* LQBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQBaseController.m; sourceTree = "<group>"; };
+		2A0460CD2244DA7300778633 /* LQLogKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQLogKit.h; sourceTree = "<group>"; };
+		2A0460CE2244DAB000778633 /* LQUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQUIKit.h; sourceTree = "<group>"; };
+		2AD6A4402244BAD5000FDA70 /* LQLogKitMannger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQLogKitMannger.h; sourceTree = "<group>"; };
+		2AD6A4412244BAD5000FDA70 /* LQCommonKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCommonKit.h; sourceTree = "<group>"; };
+		2AD6A4432244BAD5000FDA70 /* LQBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQBaseController.m; sourceTree = "<group>"; };
+		2AD6A4442244BAD5000FDA70 /* LQBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQBaseController.h; sourceTree = "<group>"; };
+		2AD6A4452244BAD5000FDA70 /* LQLogKitMannger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQLogKitMannger.m; sourceTree = "<group>"; };
 		31164B3D01568B850A59F97A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5F755A9234BFC4FD145AA4D5 /* Pods-LQCommonKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQCommonKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LQCommonKit_Tests/Pods-LQCommonKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LQCommonKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LQCommonKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,11 +115,13 @@
 		2A951967222622D600E67FAF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2A951968222622D600E67FAF /* CommonKit.h */,
-				2A95196A222622D600E67FAF /* LQBaseController.h */,
-				2A95196C222622D600E67FAF /* LQBaseController.m */,
-				2A95196B222622D600E67FAF /* LQCommonKitMannger.h */,
-				2A951969222622D600E67FAF /* LQCommonKitMannger.m */,
+				2AD6A4442244BAD5000FDA70 /* LQBaseController.h */,
+				2AD6A4432244BAD5000FDA70 /* LQBaseController.m */,
+				2AD6A4412244BAD5000FDA70 /* LQCommonKit.h */,
+				2AD6A4402244BAD5000FDA70 /* LQLogKitMannger.h */,
+				2AD6A4452244BAD5000FDA70 /* LQLogKitMannger.m */,
+				2A0460CD2244DA7300778633 /* LQLogKit.h */,
+				2A0460CE2244DAB000778633 /* LQUIKit.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -396,9 +400,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* LQAppDelegate.m in Sources */,
-				2A95196D222622D600E67FAF /* LQCommonKitMannger.m in Sources */,
+				2AD6A4472244BAD5000FDA70 /* LQBaseController.m in Sources */,
+				2AD6A4482244BAD5000FDA70 /* LQLogKitMannger.m in Sources */,
 				6003F5A7195388D20070C39A /* LQViewController.m in Sources */,
-				2A95196E222622D600E67FAF /* LQBaseController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
